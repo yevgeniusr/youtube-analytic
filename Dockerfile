@@ -10,6 +10,7 @@ RUN corepack enable pnpm && pnpm install
 
 # ---- Builder ----
 FROM node:20-alpine AS builder
+RUN corepack enable pnpm
 WORKDIR /app
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
