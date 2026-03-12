@@ -1,0 +1,30 @@
+# Dependencies
+node_modules
+.pnpm-store
+
+# Build output
+.next
+out
+
+# Git
+.git
+.gitignore
+
+# IDE / Editor
+.idea
+.vscode
+*.swp
+*.swo
+
+# Misc
+.env*
+!.env.example
+*.log
+npm-debug.log*
+.DS_Store
+README.md
+AGENTS.md
+
+# Docker
+Dockerfile
+.dockerignore
