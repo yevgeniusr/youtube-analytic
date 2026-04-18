@@ -15,13 +15,14 @@
     "incremental": true,
     "plugins": [{ "name": "next" }],
     "paths": {
-      "@/*": ["./apps/web/*"],
-      "@viewpulse/configs": ["./packages/configs/index.ts"],
-      "@viewpulse/schemas": ["./packages/schemas/index.ts"],
-      "@viewpulse/utils": ["./packages/utils/*"],
-      "@viewpulse/components": ["./packages/components/*"],
-      "@viewpulse/ai": ["./packages/ai/*"]
-    }
+      "@/*": ["./*"],
+      "@viewpulse/configs": ["../../packages/configs/index.ts"],
+      "@viewpulse/schemas": ["../../packages/schemas/index.ts"],
+      "@viewpulse/utils/*": ["../../packages/utils/*"],
+      "@viewpulse/components/*": ["../../packages/components/*"],
+      "@viewpulse/ai/*": ["../../packages/ai/*"]
+    },
+    "baseUrl": "."
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
   "exclude": ["node_modules"]
